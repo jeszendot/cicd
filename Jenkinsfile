@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        GIT_REPO_URL = 'repo link'
-        GIT_CREDENTIALS_ID = 'github-pat'
+        GIT_REPO_URL = 'https://github.com/jeszendot/cicd.git'
+        GIT_CREDENTIALS_ID = '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'
         GIT_BRANCH = 'main'
     }
     stages {
