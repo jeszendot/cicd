@@ -11,8 +11,7 @@ options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-service = Service("/usr/bin/chromedriver")
-driver = webdriver.Chrome(service=service, options=options)
+driver = webdriver.Chrome(options=options)
 
 try:
     url = f"http://localhost/staging/{test_file}"
